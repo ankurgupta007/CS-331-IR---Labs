@@ -1,4 +1,4 @@
-# CS-331-IR---Labs
+# CS-331-IR-Labs
 These are the labs done by <br>
 Ankur Gupta (202151024) <br>
 Ansh Zala (202151025) <br>
