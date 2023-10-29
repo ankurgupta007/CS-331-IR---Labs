@@ -1,0 +1,11 @@
+Experiment 0:  Word Cloud, Zipfs law, Map-Reduce (Week-1)
+
+0.1 Pick an English classic from Project Gutenberg.  Download the same as a text file. Find basic statistics related to the word occurrence in the file.  Plot a histogram of first fifty most frequently appearing words.(Fun part: Perform tokenization, remove the words in stoplist, perform stemming/lemmatization. Create a word cloud based on the relative frequency of occurrence of leftover text.)
+
+0.2 Validate the Zipfs law.  Using the method of least squares find the slope and intercept (Exponent alpha and the corpus constant C).
+
+Challenge Problems:
+
+C0.1	Select a dataset of digital artifacts considering your interest (image, video, multimedia, sound, etc.). Describe in detail the lexical roots that you would use for indexing the artifacts. If possible develop an analogy with indexing text with terms as lexical roots.
+
+C0.2	Download a large corpus of english text (2GB-10GB) from benchmark datasets for IR experiments. Configure a Hadoop cluster (to begin with standalone will be fine) in a group. Validate Zipf’s law for this large corpus by counting word-occurrences using the following. Refer to Word Count Example on Hadoop documentation page (MapReduce).

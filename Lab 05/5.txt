@@ -1,0 +1,44 @@
+Experiment 5: Latent Semantic Indexing (Week-6)
+
+5.1 Objective: To understand the concept of Latent Semantic Indexing (LSI) and its application in information retrieval.
+
+5.2 Background: LSI is a technique in natural language processing that allows the discovery of relationships between terms and documents in a collection. It's based on the principle that words that are used in the same contexts tend to have similar meanings. Singular Value Decomposition (SVD) is used to reduce the dimensions of a term-document matrix, capturing the underlying structure in the data.
+
+5.3 Required Tools and Software:
+Python programming environment (preferably Jupyter Notebook or similar).
+Libraries: NumPy, Scikit-learn, and NLTK.
+
+5.4 Procedure:
+Data Collection:
+Collect a dataset of text documents. For simplicity, you can use the 20 Newsgroups dataset available in Scikit-learn.
+Text Preprocessing:
+Tokenize the text data.
+Convert all text to lowercase.
+Remove any stopwords using NLTK.
+Stem or lemmatize words to reduce them to their base form.
+Create Term-Document Matrix:
+Using the CountVectorizer or TfidfVectorizer from Scikit-learn, create a term-document matrix.
+SVD Decomposition:
+Apply Singular Value Decomposition (SVD) on the term-document matrix.
+For this experiment, reduce the matrix to a predetermined number of topics (e.g., 100).
+Topic Exploration:
+Analyze the singular vectors corresponding to the top singular values. These vectors represent the "topics" in the data.
+Observe which terms have the highest weightings in each topic. This will give you an idea of what each topic represents.
+Information Retrieval:
+Create a query in the form of a text document.
+Preprocess the query in the same way as the dataset.
+Project the query into the same LSI space using the singular vectors obtained from SVD.
+Compute the cosine similarity between the projected query and the LSI-transformed documents to find the most relevant documents.
+Evaluation:
+If you have a dataset with labeled topics or categories, you can use LSI to cluster documents and compare the results with the actual labels using metrics like purity, normalized mutual information, or silhouette coefficient.
+5.5 Questions:
+How does the number of topics (dimensions after SVD) affect the quality of information retrieval?
+How does LSI compare to a regular term-document matrix in terms of capturing semantic information?
+What are the limitations of LSI in capturing the semantic meaning of the documents?
+
+
+5.6 Further Reading:
+Deerwester, S., Dumais, S. T., Furnas, G. W., Landauer, T. K., & Harshman, R. (1990). Indexing by latent semantic analysis. Journal of the American society for information science, 41(6), 391-407.
+Berry, M. W., Dumais, S. T., & O'Brien, G. W. (1995). Using linear algebra for intelligent information retrieval. SIAM review, 37(4), 573-595.
+
+Note: Ensure that you cite any datasets or resources you use in accordance with academic or professional guidelines.

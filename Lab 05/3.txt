@@ -1,0 +1,52 @@
+
+Experiment 3: Vector Space Retrieval (Week-4)
+
+Vector space retrieval models represent documents and queries as vectors in a multi-dimensional space. In such models, retrieval is based on computing the similarity between document and query vectors. Elasticsearch has incorporated vector features and can be used to build and test a vector space retrieval system. Here’s an experimental design to test the effectiveness of a vector space retrieval model using Elasticsearch and visualize the results using Kibana:
+
+Objectives:
+To understand the efficacy of vector space retrieval in Elasticsearch compared to traditional keyword-based search.
+To visualize the retrieval results using Kibana.
+
+3.1 Data Preparation:
+Dataset: Use a standard text corpus (e.g., the 20 Newsgroups dataset, Wikipedia dump, etc.).
+Pre-processing: Tokenize, stem, and remove stop words from the documents.
+
+3.2 Setup:
+Elasticsearch:
+Install Elasticsearch.
+Create an index with appropriate mappings. For vector fields, you can use the dense_vector type.
+Kibana:
+Install and set up Kibana to connect to your Elasticsearch cluster.
+
+3.3 Experiment Steps:
+Document Vectorization:
+Use a pre-trained model (e.g., Word2Vec, FastText, BERT) to generate vectors for each document in your dataset.
+Store each document along with its vector in the Elasticsearch index.
+Query Processing:
+Convert user queries into vectors using the same pre-trained model.
+Use the cosine similarity script in Elasticsearch to retrieve the most similar documents based on the query vector.
+Traditional Keyword-based Search (for comparison):
+Use Elasticsearch's standard text-based search (e.g., BM25) to retrieve documents based on keywords.
+
+3.4 Evaluation:
+Relevance Judgements:
+Use a set of benchmark queries for which relevance judgements are available or create your own by manually labeling a subset of documents as relevant/irrelevant for specific queries.
+Metrics:
+Use standard IR metrics like Precision@K, Recall@K, Mean Average Precision, and Normalized Discounted Cumulative Gain to evaluate the performance.
+Visualization in Kibana:
+Use Kibana to visualize the retrieval results. This can include histograms of scores, precision-recall curves, and heatmaps of document similarity.
+Compare the results of the vector space retrieval with traditional keyword-based search visually.
+
+3.5 Analysis:
+Effectiveness: Compare the effectiveness of vector space retrieval against traditional keyword-based search using the metrics computed.
+Efficiency: Analyze the query response time for both methods.
+Visualization: Inspect the visual results in Kibana to derive insights about where vector space retrieval excels or falls short compared to traditional methods.
+
+3.6 Conclusion:
+Based on the results, draw conclusions about the benefits and limitations of vector space retrieval using Elasticsearch. Offer recommendations for potential improvements or adjustments.
+Ensure you have enough computational resources as vector-based operations, especially on large corpora, can be resource-intensive.
+The performance might vary based on the choice of pre-trained models, so consider testing multiple vectorization strategies.
+While this experiment focuses on the retrieval aspect, real-world applications might also need to consider ranking, clustering, and other post-retrieval processing steps.
+
+
+

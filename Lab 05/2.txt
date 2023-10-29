@@ -1,0 +1,12 @@
+Experiment 1: Open Source IR System (Week-2)
+
+1.1 Obtain and install an open-source IR system.  Create a small document collection from your email.  Index your collection.  Try a few queries.
+1.2 Create a bigram, trigram language model based on emails received from a user.  Using your language model, implement a random text generator for that user.  
+
+Challenge Problems:
+
+C1.1 For the installed open-source IR system, describe in detail with the help of an example the relevance scoring function.
+
+Experiment 2: Block Sort Based Indexer and Building Term-Document Matrix (TF-IDF) on Hadoop (Week-3)
+
+Corpus in a single CSV : https://drive.google.com/file/d/1pO0xgiC8pzXGHbrVnltb7ls2pPl3sl-H/view?usp=sharing

@@ -1,0 +1,11 @@
+Experiment 4: Text classification: Naive Bayes, Rocchio and k-nearest neighbor (Week-5)
+
+4.1 Download 20 Newsgroups and train and test,
+Naive Bayes classifier
+Rocchio classifier
+K - Nearest Neighbor classifier
+
+Dataset links: 
+http://qwone.com/~jason/20Newsgroups/
+
+4.2 Compare results in terms of effectiveness measured by F-score.  
